@@ -1,0 +1,86 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  outline: none;
+  width: 250px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  margin-left: -35px;
+  cursor: pointer;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-toggle,
+.notification {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--danger-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+  }
+}

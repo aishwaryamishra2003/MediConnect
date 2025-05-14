@@ -1,0 +1,15 @@
+{
+  "name": "doctor-dashboard-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Doctor Dashboard application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "ISC"
+}

@@ -1,0 +1,138 @@
+.dashboard {
+  padding: 20px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+.stat-info h3 {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 5px;
+}
+
+.stat-info p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-trend {
+  margin-left: auto;
+  font-size: 1.2rem;
+}
+
+.stat-trend.up {
+  color: var(--success-color);
+}
+
+.stat-trend.down {
+  color: var(--danger-color);
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.status-badge.active {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: var(--success-color);
+}
+
+.status-badge.inactive {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: var(--danger-color);
+}
+
+.upcoming-appointments ul {
+  list-style: none;
+}
+
+.upcoming-appointments li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.appointment-info h4 {
+  margin-bottom: 5px;
+}
+
+.appointment-info p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.appointment-time p {
+  margin: 5px 0;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
